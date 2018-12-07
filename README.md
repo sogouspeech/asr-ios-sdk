@@ -1,4 +1,4 @@
-# asr-iOS-sdk
+# asr-ios-sdk
 搜狗语音识别库/示例
 
 ## 准备工作
