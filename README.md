@@ -4,7 +4,7 @@
 ## 准备工作
 - 搜狗知音平台申请的appid和appkey
 - 运行OSX的苹果开发电脑、iPhone/iPad
-- [Xcode 7][xcode]
+- [Xcode](https://developer.apple.com/xcode/)
 
 ## 集成方式
 - 下载本工程[Releases](https://github.com/sogouspeech/asr-iOS-sdk/releases)页面的静态库(SDK library).
