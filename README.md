@@ -7,7 +7,7 @@
 - [Xcode 7][xcode]
 
 ## 集成方式
-- 下载本工程Releases页面的静态库(SDK library).
+- 下载本工程[Releases](https://github.com/sogouspeech/asr-iOS-sdk/releases)页面的静态库(SDK library).
 - 将静态库以及源文件(头文件)集成到开发项目中.
 
 ## 依赖项
