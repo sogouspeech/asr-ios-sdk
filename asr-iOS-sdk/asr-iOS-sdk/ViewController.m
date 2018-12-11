@@ -1,9 +1,12 @@
 //
 //  ViewController.m
-//  Example
+//  asr-iOS-sdk
+//  SDK function demo
 //
-//  Created by sogou on 2018/6/25.
-//  Copyright © 2018年 sogou. All rights reserved.
+//  Created by sogou on 2018/12/10.
+//  Copyright 2018 Sogou Inc. All rights reserved.
+//  Use of this source code is governed by the Apache 2.0
+//  license that can be found in the LICENSE file.
 //
 
 #import "ViewController.h"
@@ -18,9 +21,9 @@ NSString* __appkey = @"your app key";
 
 @interface ViewController () <SogouSpeechDelegate>
 
-@property (nonatomic, strong) SogouSpeechManager* speechManager;
-    
-@property (nonatomic, strong) UINavigationController* settingViewController;
+@property (nonatomic, strong) SogouSpeechManager *speechManager;
+
+@property (nonatomic, strong) UINavigationController *settingViewController;
 
 @end
 
@@ -30,7 +33,7 @@ NSString* __appkey = @"your app key";
     [super viewDidLoad];
     
     [SogoSpeechSDK sdkVersion];
-
+    
     NSString *filepathSpeex = [NSTemporaryDirectory() stringByAppendingPathComponent:@"speex.data"];
     [SogouSpeechPropertySetting setProperty:filepathSpeex forKey:ASR_ONLINE_DEBUG_SAVE_SPEEX_PATH];
     NSString *filepathVad = [NSTemporaryDirectory() stringByAppendingPathComponent:@"vad.pcm"];
@@ -67,14 +70,14 @@ NSString* __appkey = @"your app key";
     [self getNewToken];
 }
 
--(void)onError:(NSError *)error {
+- (void)onError:(NSError *)error {
     [self.textView setText:[NSString stringWithFormat:@"%@",error]];
 }
 
--(void)onEvent:(NSString *)eventName param:(NSObject *)param{
+- (void)onEvent:(NSString *)eventName param:(NSObject *)param{
     if ([eventName isEqualToString:MSG_ASR_ONLINE_RESULT]) {
         if ([param isKindOfClass:[NSString class]] && ((NSString*)param).length > 0) {
-             [self.textView setText:(NSString*)param];
+            [self.textView setText:(NSString*)param];
         }
     }
     else if([eventName isEqualToString:MSG_ASR_ONLINE_GET_TOKEN_SUCCESS]) {
@@ -114,7 +117,7 @@ NSString* __appkey = @"your app key";
         [self.textViewStauts setText:textStr];
     }
     else if([eventName isEqualToString:MSG_ASR_ONLINE_AUDIO_DATA]) {
-
+        
     }
     else if([eventName isEqualToString:MSG_AUDIO_RECORDER_VOLUME]) {
         [self.labelVolume setText: [NSString stringWithFormat:@"%@",(NSNumber*)param]];
@@ -129,22 +132,21 @@ NSString* __appkey = @"your app key";
         NSLog(@"%@",str);
         [self.textView setText:str];
     }
-
+    
     [self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length - 1, 1)];
     [self.textViewStauts scrollRangeToVisible:NSMakeRange(self.textViewStauts.text.length - 1, 1)];
 }
-    
+
 - (void)getNewToken{
     NSString * uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     [GenerateToken requestTokenWithAppid:__appid appkey:__appkey uuid:uuid durationHours:10 handler:^(NSString *token, NSError *error, BOOL success) {
-            [SogouSpeechPropertySetting setProperty:token forKey:SOGOU_SPEECH_TOKEN];
-            [SogouSpeechPropertySetting setProperty:@"1C0YTz2x2YrrgH5ztkFH2NBZe6D" forKey:SOGOU_SPEECH_APPID];
-            [SogouSpeechPropertySetting setProperty:uuid forKey:SOGOU_SPEECH_UUID];
-            NSLog(@"token : %@", token);
-            NSLog(@"error : %@", error);
+        [SogouSpeechPropertySetting setProperty:token forKey:SOGOU_SPEECH_TOKEN];
+        [SogouSpeechPropertySetting setProperty:@"1C0YTz2x2YrrgH5ztkFH2NBZe6D" forKey:SOGOU_SPEECH_APPID];
+        [SogouSpeechPropertySetting setProperty:uuid forKey:SOGOU_SPEECH_UUID];
+        NSLog(@"token : %@", token);
+        NSLog(@"error : %@", error);
     }];
 }
-
 
 @end
 

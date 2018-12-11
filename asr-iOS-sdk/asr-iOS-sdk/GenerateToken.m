@@ -1,9 +1,12 @@
 //
 //  GenerateToken.m
-//  Example
+//  asr-iOS-sdk
+//  Example of token application
 //
-//  Created by Marx Ma on 2018/10/20.
-//  Copyright © 2018年 sogou. All rights reserved.
+//  Created by sogou on 2018/12/10.
+//  Copyright 2018 Sogou Inc. All rights reserved.
+//  Use of this source code is governed by the Apache 2.0
+//  license that can be found in the LICENSE file.
 //
 
 #import "GenerateToken.h"

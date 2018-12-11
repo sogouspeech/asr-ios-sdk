@@ -1,9 +1,12 @@
 //
 //  SogouSpeechDelegate.h
 //  SogouSpeech
+//  Declare the callback command and callback method of the SDK
 //
-//  Created by sogou on 2018/6/25.
-//  Copyright © 2018年 sogou. All rights reserved.
+//  Created by sogou on 2018/12/10.
+//  Copyright 2018 Sogou Inc. All rights reserved.
+//  Use of this source code is governed by the Apache 2.0
+//  license that can be found in the LICENSE file.
 //
 
 #import <Foundation/Foundation.h>
@@ -60,7 +63,7 @@ extern NSString* MSG_WAKEUP_SUCC ;
 
 /**
  消息回调(主线程)
-
+ 
  @param eventName 消息名称
  @param param 消息内容
  */
@@ -68,9 +71,9 @@ extern NSString* MSG_WAKEUP_SUCC ;
 
 /**
  错误回调(主线程)
-
+ 
  @param error 具体错误
  */
 - (void) onError: (NSError*) error;
-                                
+
 @end

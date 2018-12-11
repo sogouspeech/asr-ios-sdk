@@ -1,20 +1,26 @@
 //
 //  GenerateToken.h
-//  Example
+//  asr-iOS-sdk
+//  Example of token application
 //
-//  Created by Marx Ma on 2018/10/20.
-//  Copyright © 2018年 sogou. All rights reserved.
+//  Created by sogou on 2018/12/10.
+//  Copyright 2018 Sogou Inc. All rights reserved.
+//  Use of this source code is governed by the Apache 2.0
+//  license that can be found in the LICENSE file.
 //
 
 #import <Foundation/Foundation.h>
 
 
-typedef void (^TokenResponseHandler) (NSString* token, NSError *error, BOOL success);
-
+typedef void (^TokenResponseHandler) (NSString *token, NSError *error, BOOL success);
 
 @interface GenerateToken : NSObject
 
-+ (void)requestTokenWithAppid:(NSString *)appid appkey:(NSString *)appkey uuid:(NSString *)uuid durationHours:(NSInteger)duration handler:(TokenResponseHandler)handler;
++ (void)requestTokenWithAppid:(NSString *)appid
+                       appkey:(NSString *)appkey
+                         uuid:(NSString *)uuid
+                durationHours:(NSInteger)duration
+                      handler:(TokenResponseHandler)handler;
 
 @end
 

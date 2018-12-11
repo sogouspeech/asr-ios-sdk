@@ -1,16 +1,19 @@
 //
 //  SogouSpeechPropertySetting.h
 //  SogouSpeech
+//  SDK function and parameter interpretation and setting method
 //
-//  Created by Marx Ma on 2018/9/26.
-//  Copyright © 2018年 sogou. All rights reserved.
+//  Created by sogou on 2018/12/10.
+//  Copyright 2018 Sogou Inc. All rights reserved.
+//  Use of this source code is governed by the Apache 2.0
+//  license that can be found in the LICENSE file.
 //
 
 #import <Foundation/Foundation.h>
 
 /**
  * APPID app在搜狗的唯一标识
- * 
+ *
  */
 extern NSString* SOGOU_SPEECH_APPID;
 extern NSString* SOGOU_SPEECH_UUID;
@@ -34,8 +37,8 @@ typedef NS_OPTIONS(NSUInteger, SGSpeechModeOption)
     SGSpeechModeOptionWakeUp                = 0x8,
     /* 在线语义识别 ，必须与在线识别同时使用*/
     SGSpeechModeOptionNLUOnline             = 0x11,
-//    /* 离线语义识别 ，必须与离线识别同时使用*/
-//    SGSpeechModeOptionNLUOffline            = 0x22,
+    //    /* 离线语义识别 ，必须与离线识别同时使用*/
+    //    SGSpeechModeOptionNLUOffline            = 0x22,
 };
 
 /**
@@ -161,7 +164,7 @@ extern NSString* ASR_ONLINE_HOST_ADDRESS;
 
 /**
  参数设置
-
+ 
  @param property 参数值
  @param key 参数名称
  @return 是否设置成功
@@ -170,7 +173,7 @@ extern NSString* ASR_ONLINE_HOST_ADDRESS;
 
 /**
  获取参数值
-
+ 
  @param key 参数名称
  @return 参数值
  */

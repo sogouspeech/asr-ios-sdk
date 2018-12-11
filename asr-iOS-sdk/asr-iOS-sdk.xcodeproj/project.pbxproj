@@ -13,12 +13,11 @@
 		03DDB96721BA7697007826D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DDB96621BA7697007826D7 /* Assets.xcassets */; };
 		03DDB96A21BA7697007826D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DDB96821BA7697007826D7 /* LaunchScreen.storyboard */; };
 		03DDB96D21BA7697007826D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DDB96C21BA7697007826D7 /* main.m */; };
-		03DDB98B21BA8A31007826D7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03DDB98121BA8A31007826D7 /* gRPCCertificates.bundle */; };
-		03DDB98C21BA8A31007826D7 /* libGRPCRelated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DDB98921BA8A31007826D7 /* libGRPCRelated.a */; };
-		03DDB98D21BA8A31007826D7 /* libSogoSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DDB98A21BA8A31007826D7 /* libSogoSpeechSDK.a */; };
 		03DDB99021BA8AB0007826D7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DDB98F21BA8AB0007826D7 /* libc++.tbd */; };
 		03DDB99221BA8AB6007826D7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DDB99121BA8AB6007826D7 /* libz.tbd */; };
 		03DDB99521BA8AE0007826D7 /* GenerateToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DDB99421BA8AE0007826D7 /* GenerateToken.m */; };
+		D10A365321BE786F00BE6F84 /* libGRPCRelated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10A365121BE786F00BE6F84 /* libGRPCRelated.a */; };
+		D10A365421BE786F00BE6F84 /* libSogoSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10A365221BE786F00BE6F84 /* libSogoSpeechSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,18 +31,17 @@
 		03DDB96921BA7697007826D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03DDB96B21BA7697007826D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DDB96C21BA7697007826D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		03DDB98121BA8A31007826D7 /* gRPCCertificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gRPCCertificates.bundle; sourceTree = "<group>"; };
-		03DDB98421BA8A31007826D7 /* SogoSpeechSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogoSpeechSDK.h; sourceTree = "<group>"; };
-		03DDB98521BA8A31007826D7 /* SogouSpeechDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechDelegate.h; sourceTree = "<group>"; };
-		03DDB98621BA8A31007826D7 /* SogouSpeechErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechErrorCode.h; sourceTree = "<group>"; };
-		03DDB98721BA8A31007826D7 /* SogouSpeechManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechManager.h; sourceTree = "<group>"; };
-		03DDB98821BA8A31007826D7 /* SogouSpeechPropertySetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechPropertySetting.h; sourceTree = "<group>"; };
-		03DDB98921BA8A31007826D7 /* libGRPCRelated.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGRPCRelated.a; sourceTree = "<group>"; };
-		03DDB98A21BA8A31007826D7 /* libSogoSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSogoSpeechSDK.a; sourceTree = "<group>"; };
 		03DDB98F21BA8AB0007826D7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		03DDB99121BA8AB6007826D7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		03DDB99321BA8ADF007826D7 /* GenerateToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateToken.h; sourceTree = "<group>"; };
 		03DDB99421BA8AE0007826D7 /* GenerateToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateToken.m; sourceTree = "<group>"; };
+		D10A364C21BE786F00BE6F84 /* SogouSpeechErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechErrorCode.h; sourceTree = "<group>"; };
+		D10A364D21BE786F00BE6F84 /* SogouSpeechPropertySetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechPropertySetting.h; sourceTree = "<group>"; };
+		D10A364E21BE786F00BE6F84 /* SogoSpeechSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogoSpeechSDK.h; sourceTree = "<group>"; };
+		D10A364F21BE786F00BE6F84 /* SogouSpeechManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechManager.h; sourceTree = "<group>"; };
+		D10A365021BE786F00BE6F84 /* SogouSpeechDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechDelegate.h; sourceTree = "<group>"; };
+		D10A365121BE786F00BE6F84 /* libGRPCRelated.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGRPCRelated.a; sourceTree = "<group>"; };
+		D10A365221BE786F00BE6F84 /* libSogoSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSogoSpeechSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +51,8 @@
 			files = (
 				03DDB99221BA8AB6007826D7 /* libz.tbd in Frameworks */,
 				03DDB99021BA8AB0007826D7 /* libc++.tbd in Frameworks */,
-				03DDB98D21BA8A31007826D7 /* libSogoSpeechSDK.a in Frameworks */,
-				03DDB98C21BA8A31007826D7 /* libGRPCRelated.a in Frameworks */,
+				D10A365421BE786F00BE6F84 /* libSogoSpeechSDK.a in Frameworks */,
+				D10A365321BE786F00BE6F84 /* libGRPCRelated.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +79,7 @@
 		03DDB95C21BA7696007826D7 /* asr-iOS-sdk */ = {
 			isa = PBXGroup;
 			children = (
-				03DDB98021BA8A31007826D7 /* SogoSpeech */,
+				D10A364921BE786F00BE6F84 /* SogoSpeech */,
 				03DDB95D21BA7696007826D7 /* AppDelegate.h */,
 				03DDB95E21BA7696007826D7 /* AppDelegate.m */,
 				03DDB99321BA8ADF007826D7 /* GenerateToken.h */,
@@ -97,37 +95,6 @@
 			path = "asr-iOS-sdk";
 			sourceTree = "<group>";
 		};
-		03DDB98021BA8A31007826D7 /* SogoSpeech */ = {
-			isa = PBXGroup;
-			children = (
-				03DDB98121BA8A31007826D7 /* gRPCCertificates.bundle */,
-				03DDB98221BA8A31007826D7 /* include */,
-				03DDB98921BA8A31007826D7 /* libGRPCRelated.a */,
-				03DDB98A21BA8A31007826D7 /* libSogoSpeechSDK.a */,
-			);
-			path = SogoSpeech;
-			sourceTree = "<group>";
-		};
-		03DDB98221BA8A31007826D7 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				03DDB98321BA8A31007826D7 /* SogoSpeechSDK */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		03DDB98321BA8A31007826D7 /* SogoSpeechSDK */ = {
-			isa = PBXGroup;
-			children = (
-				03DDB98421BA8A31007826D7 /* SogoSpeechSDK.h */,
-				03DDB98521BA8A31007826D7 /* SogouSpeechDelegate.h */,
-				03DDB98621BA8A31007826D7 /* SogouSpeechErrorCode.h */,
-				03DDB98721BA8A31007826D7 /* SogouSpeechManager.h */,
-				03DDB98821BA8A31007826D7 /* SogouSpeechPropertySetting.h */,
-			);
-			path = SogoSpeechSDK;
-			sourceTree = "<group>";
-		};
 		03DDB98E21BA8AB0007826D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +102,36 @@
 				03DDB98F21BA8AB0007826D7 /* libc++.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D10A364921BE786F00BE6F84 /* SogoSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				D10A364A21BE786F00BE6F84 /* include */,
+				D10A365121BE786F00BE6F84 /* libGRPCRelated.a */,
+				D10A365221BE786F00BE6F84 /* libSogoSpeechSDK.a */,
+			);
+			path = SogoSpeech;
+			sourceTree = "<group>";
+		};
+		D10A364A21BE786F00BE6F84 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D10A364B21BE786F00BE6F84 /* SogoSpeechSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D10A364B21BE786F00BE6F84 /* SogoSpeechSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D10A364C21BE786F00BE6F84 /* SogouSpeechErrorCode.h */,
+				D10A364D21BE786F00BE6F84 /* SogouSpeechPropertySetting.h */,
+				D10A364E21BE786F00BE6F84 /* SogoSpeechSDK.h */,
+				D10A364F21BE786F00BE6F84 /* SogouSpeechManager.h */,
+				D10A365021BE786F00BE6F84 /* SogouSpeechDelegate.h */,
+			);
+			path = SogoSpeechSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DDB96A21BA7697007826D7 /* LaunchScreen.storyboard in Resources */,
-				03DDB98B21BA8A31007826D7 /* gRPCCertificates.bundle in Resources */,
 				03DDB96721BA7697007826D7 /* Assets.xcassets in Resources */,
 				03DDB96521BA7696007826D7 /* Main.storyboard in Resources */,
 			);
@@ -356,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XK7NDLAV2M;
 				INFOPLIST_FILE = "asr-iOS-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XK7NDLAV2M;
 				INFOPLIST_FILE = "asr-iOS-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
