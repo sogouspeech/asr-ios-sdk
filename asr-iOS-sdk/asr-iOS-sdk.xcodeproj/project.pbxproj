@@ -18,6 +18,7 @@
 		03DDB99521BA8AE0007826D7 /* GenerateToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DDB99421BA8AE0007826D7 /* GenerateToken.m */; };
 		D10A365321BE786F00BE6F84 /* libGRPCRelated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10A365121BE786F00BE6F84 /* libGRPCRelated.a */; };
 		D10A365421BE786F00BE6F84 /* libSogoSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10A365221BE786F00BE6F84 /* libSogoSpeechSDK.a */; };
+		D1F98D3221BFB0BA00A56780 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1F98D3121BFB0BA00A56780 /* gRPCCertificates.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D10A365021BE786F00BE6F84 /* SogouSpeechDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SogouSpeechDelegate.h; sourceTree = "<group>"; };
 		D10A365121BE786F00BE6F84 /* libGRPCRelated.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGRPCRelated.a; sourceTree = "<group>"; };
 		D10A365221BE786F00BE6F84 /* libSogoSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSogoSpeechSDK.a; sourceTree = "<group>"; };
+		D1F98D3121BFB0BA00A56780 /* gRPCCertificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gRPCCertificates.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		D10A364921BE786F00BE6F84 /* SogoSpeech */ = {
 			isa = PBXGroup;
 			children = (
+				D1F98D3121BFB0BA00A56780 /* gRPCCertificates.bundle */,
 				D10A364A21BE786F00BE6F84 /* include */,
 				D10A365121BE786F00BE6F84 /* libGRPCRelated.a */,
 				D10A365221BE786F00BE6F84 /* libSogoSpeechSDK.a */,
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DDB96A21BA7697007826D7 /* LaunchScreen.storyboard in Resources */,
+				D1F98D3221BFB0BA00A56780 /* gRPCCertificates.bundle in Resources */,
 				03DDB96721BA7697007826D7 /* Assets.xcassets in Resources */,
 				03DDB96521BA7696007826D7 /* Main.storyboard in Resources */,
 			);

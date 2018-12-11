@@ -6,3 +6,5 @@ UserInterfaceState.xcuserstate
 project.xcworkspace/  
 xcuserdata/  
 UserInterface.xcuserstate
+.DS_Store
+*/.DS_Store
