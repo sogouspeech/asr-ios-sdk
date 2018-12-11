@@ -17,9 +17,9 @@
 
 ## 运行Demo
 - 克隆/下载本工程源码
-- 将Releases页面的静态库下载后，重新引入到工程中
+- 将**Releases**页面的静态库下载后，重新引入到工程中
 - 在Demo的ViewController中添加获取到的appid和appkey，并填写使用的服务域名
 - 运行
 
 
-使用方法请参考[搜狗知音文档](https://docs.zhiyin.sogou.com/docs/asr/sdk)
+使用方法请参考 [搜狗知音文档](https://docs.zhiyin.sogou.com/docs/asr/sdk)
