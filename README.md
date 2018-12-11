@@ -2,7 +2,7 @@
 搜狗语音识别库/示例
 
 ## 准备工作
-- 搜狗知音平台申请的appid和appkey
+- 搜狗知音平台申请的**appid**和**appkey**
 - 运行OSX的苹果开发电脑、iPhone/iPad
 - [Xcode](https://developer.apple.com/xcode/)
 
