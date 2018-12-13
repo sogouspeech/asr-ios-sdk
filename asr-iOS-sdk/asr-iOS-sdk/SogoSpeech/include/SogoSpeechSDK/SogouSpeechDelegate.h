@@ -25,6 +25,7 @@
  * MSG_ASR_ONLINE_AUDIO_DATA: 识别的音频数据回调
  * MSG_ASR_ONLINE_AUDIO_DATA: 无法同时开启两个语音识别
  * MSG_ASR_ONLINE_WEBHOOK:webhook中转响应结果。
+ * MSG_ASR_ONLINE_ALL_CONTENT:识别所有内容，gRPC result(SPBStreamingRecognitionResult)类。
  */
 extern NSString* MSG_ASR_ONLINE_GET_TOKEN_SUCCESS;
 extern NSString* MSG_ASR_ONLINE_RESULT ;
@@ -38,7 +39,7 @@ extern NSString* MSG_ASR_ONLINE_TERMINATION ;
 extern NSString* MSG_ASR_ONLINE_AUDIO_DATA ;
 extern NSString* MSG_ASR_ONLINE_DUPLICATE;
 extern NSString* MSG_ASR_ONLINE_WEBHOOK;
-
+extern NSString* MSG_ASR_ONLINE_ALL_CONTENT;
 /**
  * 录音功能回调相关参数
  */

@@ -16,6 +16,8 @@
 #import "SogouSpeechPropertySetting.h"
 #import "SogouSpeechManager.h"
 
+#import <SogouSpeech/sogou/speech/asr/v1/Asr.pbobjc.h>
+
 @interface SogoSpeechSDK : NSObject
 
 + (NSString *)sdkVersion;

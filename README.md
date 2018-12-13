@@ -9,10 +9,29 @@
 ## 集成方式
 - 下载本工程[Releases](https://github.com/sogouspeech/asr-iOS-sdk/releases)页面的静态库 (**SDK library**).
 - 将静态库以及源文件(头文件)集成到开发项目中.
+- 拷贝protos文件夹(包括文件夹内所有文件)、SogouSpeech.podspec到xcodeproj同目录中.
+- 使用cocoapod将SogouSpeech添加到项目中。
+
+Podfile示例如下：
+```bash
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+#use_frameworks!
+
+xcodeproj 'asr-iOS-sdk.xcodeproj'
+
+install! 'cocoapods', :deterministic_uuids => false
+
+target 'asr-iOS-sdk' do
+    # Depend on the generated SogouSpeech library.
+    pod 'SogouSpeech', :path => '.'
+end
+```
+有关更详尽的cocoapods介绍请参见[cocoapods官网](https://cocoapods.org/).
 
 ## 依赖项
 - TARGETS-->Info-->Custom iOS Target Properties   添加麦克风使用权限 (**Privacy - Microphone Usage Description**)
-- TARGETS-->Build Settings-->Other Linker Flags 添加 **-ObjC**
+- TARGETS-->Build Settings-->Other Linker Flags 添加 **$(inherited)**
 - TARGETS-->Link Binary With Libraries 添加 **libz、libc++** 
 
 ## 运行Demo

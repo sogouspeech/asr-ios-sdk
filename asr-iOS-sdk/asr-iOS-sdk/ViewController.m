@@ -14,9 +14,9 @@
 #import "SogoSpeechSDK.h"
 
 
-#error 填写申请到的appid和appkey
-NSString* __appid = @"your app id";
-NSString* __appkey = @"your app key";
+//#error 填写申请到的appid和appkey
+NSString* __appid = @"1C0YTz2x2YrrgH5ztkFH2NBZe6D";
+NSString* __appkey = @"NSD2Zoh+DRN3E+MJlA+jvAJcAP3pLYkvO4+lDjHUjvAAPAjJBVNNh+cgIt1DFgFbFvKACXjMxsDUHR8uNTbu0A==";
 
 
 @interface ViewController () <SogouSpeechDelegate>
@@ -44,7 +44,7 @@ NSString* __appkey = @"your app key";
     
     [SogouSpeechPropertySetting setProperty:@"default" forKey:ASR_ONLINE_MODEL];
     
-#error 填写将要使用的服务域名
+//#error 填写将要使用的服务域名
     [SogouSpeechPropertySetting setProperty:@"canary.speech.sogou.com:443" forKey:ASR_ONLINE_HOST_ADDRESS];
     
     self.speechManager = [[SogouSpeechManager alloc] init];

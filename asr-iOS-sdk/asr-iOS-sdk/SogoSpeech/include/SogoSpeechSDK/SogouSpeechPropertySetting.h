@@ -83,6 +83,12 @@ extern NSString* SOGOU_SPEECH_MODE_OPTION;
  *
  * ASR_ONLINE_MODEL:
  *      分环境设置：包括通用、地图导航类、搜索(search)等。
+ *
+ *
+ * ASR_ONLINE_PROFANITY_FILTER:
+ *      脏话过滤开关。
+ * ASR_ONLINE_WORD_TIME_OFFSET_BOOL:
+ *      识别内容对应的时间信息开关
  */
 
 extern NSString* ASR_ONLINE_VAD_ENABLE_BOOL;
@@ -99,6 +105,8 @@ extern NSString* ASR_ONLINE_AUTH_TOKEN_STRING;
 extern NSString* ASR_ONLINE_SEND_PACK_LEN_INT;
 extern NSString* ASR_ONLINE_MODEL;
 
+extern NSString* ASR_ONLINE_PROFANITY_FILTER_BOOL;
+extern NSString* ASR_ONLINE_WORD_TIME_OFFSET_BOOL;
 
 /**
  * WAKEUP_IS_NEEDED:是否需要唤醒功能
