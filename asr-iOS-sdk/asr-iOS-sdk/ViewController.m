@@ -141,7 +141,7 @@ NSString* __appkey = @"your app key";
     NSString * uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     [GenerateToken requestTokenWithAppid:__appid appkey:__appkey uuid:uuid durationHours:10 handler:^(NSString *token, NSError *error, BOOL success) {
         [SogouSpeechPropertySetting setProperty:token forKey:SOGOU_SPEECH_TOKEN];
-        [SogouSpeechPropertySetting setProperty:@"1C0YTz2x2YrrgH5ztkFH2NBZe6D" forKey:SOGOU_SPEECH_APPID];
+        [SogouSpeechPropertySetting setProperty:__appid forKey:SOGOU_SPEECH_APPID];
         [SogouSpeechPropertySetting setProperty:uuid forKey:SOGOU_SPEECH_UUID];
         NSLog(@"token : %@", token);
         NSLog(@"error : %@", error);
