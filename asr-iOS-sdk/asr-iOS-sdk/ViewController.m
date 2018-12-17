@@ -15,8 +15,8 @@
 
 
 //#error 填写申请到的appid和appkey
-NSString* __appid = @"1C0YTz2x2YrrgH5ztkFH2NBZe6D";
-NSString* __appkey = @"NSD2Zoh+DRN3E+MJlA+jvAJcAP3pLYkvO4+lDjHUjvAAPAjJBVNNh+cgIt1DFgFbFvKACXjMxsDUHR8uNTbu0A==";
+NSString* __appid = @"your app id";
+NSString* __appkey = @"your app key";
 
 
 @interface ViewController () <SogouSpeechDelegate>
@@ -141,7 +141,7 @@ NSString* __appkey = @"NSD2Zoh+DRN3E+MJlA+jvAJcAP3pLYkvO4+lDjHUjvAAPAjJBVNNh+cgI
     NSString * uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     [GenerateToken requestTokenWithAppid:__appid appkey:__appkey uuid:uuid durationHours:10 handler:^(NSString *token, NSError *error, BOOL success) {
         [SogouSpeechPropertySetting setProperty:token forKey:SOGOU_SPEECH_TOKEN];
-        [SogouSpeechPropertySetting setProperty:@"1C0YTz2x2YrrgH5ztkFH2NBZe6D" forKey:SOGOU_SPEECH_APPID];
+        [SogouSpeechPropertySetting setProperty:__appid forKey:SOGOU_SPEECH_APPID];
         [SogouSpeechPropertySetting setProperty:uuid forKey:SOGOU_SPEECH_UUID];
         NSLog(@"token : %@", token);
         NSLog(@"error : %@", error);
