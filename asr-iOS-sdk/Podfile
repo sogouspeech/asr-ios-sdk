@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 #use_frameworks!
 
-xcodeproj 'asr-iOS-sdk.xcodeproj'
+project 'asr-iOS-sdk.xcodeproj'
 
 install! 'cocoapods', :deterministic_uuids => false
 
