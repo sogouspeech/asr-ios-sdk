@@ -28,11 +28,13 @@ Pod::Spec.new do |s|
                       'SogouSpeechSDK/Classes/Client/SogouSpeechManager.h',
                       'SogouSpeechSDK/Classes/Client/SogouSpeechPropertySetting.h'
   end
-  
+
+  src_root = '$(PODS_ROOT)/SogouSpeechSDK/SogouSpeechSDK'
+
   s.subspec "Messages" do |ms|
     ms.source_files = "SogouSpeechSDK/Classes/**/*.pbobjc.{h,m}"
     ms.header_mappings_dir = "SogouSpeechSDK/Classes/SogouSpeech"
-    ms.private_header_files = "SogouSpeechSDK/Classes/**/*.pbobjc.h";
+    # ms.private_header_files = "SogouSpeechSDK/Classes/**/*.pbobjc.h";
     ms.requires_arc = false
     ms.dependency "Protobuf"
   end
@@ -45,7 +47,6 @@ Pod::Spec.new do |s|
     ss.dependency "#{s.name}/Messages"
   end
 
-  src_root = '$(PODS_ROOT)/SogouSpeechSDK'
   s.pod_target_xcconfig = {
     # This is needed by all pods that depend on Protobuf:
     'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1',
