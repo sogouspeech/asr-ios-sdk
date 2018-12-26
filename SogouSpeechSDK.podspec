@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SogouSpeechSDK'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'zhiyin lib'
 
   s.homepage         = 'https://github.com/sogouspeech/asr-ios-sdk'
